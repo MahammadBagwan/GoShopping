@@ -13,15 +13,15 @@ public class EntryPoint {
         ShopFactory shopFact = new GSShopFactory();
 
         // Q2
-        PrimeAcc primeAcc = new GSPrimeAcc(12345, "A", 100.0f, true);
+        PrimeAcc primeAccount = shopFact.getNewPrimeAccount(12345, "A", 100.0f, true);
 
         // Q3
-        NormalAcc normalAcc = new GSNormal(21345, "B", 120.0f, 100.0f);
+        NormalAcc normalAccount = shopFact.getNewNormalAccount(21345, "B", 120.0f, 100.0f);
 
         // Q4
-        primeAcc.bookProduct(3.2f);
+        primeAccount.bookProduct(3.2f);
 
         // Q5
-        System.out.println(primeAcc.toString());
+        System.out.println(normalAccount.toString());
     }
 }
